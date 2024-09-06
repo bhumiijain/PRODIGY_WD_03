@@ -1,0 +1,51 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.main{
+    height: 60vh;
+    background-color: #f0f0f0;
+    margin-left: 42px;
+    margin-right: -230px;
+}
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Ensures 3 columns */
+    grid-template-rows: repeat(3, 100px);    /* Ensures 3 rows */
+    gap: 5px;
+}
+
+.cell {
+  
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 1px solid #020202; /* Added border to make squares visible */
+}
+
+.x::before {
+    content: 'X';
+    color: red;
+}
+
+.circle::before {
+    content: 'O';
+    color: blue;
+}
+#restartButton {
+    margin: 45px;
+    margin-bottom: -345px;
+    margin-left: -200px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
